@@ -20,9 +20,9 @@ performance.
 
 ### Project has been implemented in 2 versions:
 - V1: with Docker compose + SQS + Data Lake partition by `app_name`
-- V2: with local run `python3 main_v2.py` and RequestHolder class as quick & dirty implementation of messages holder, without partitioning in data lake 
+- V2: with local run `python3 main_v2.py` and RequestHolder class as quick & dirty implementation of messages holder, without partitioning in data lake. Just uncomment that part for running
   
-
+### Current request aggregation is limited to 5 requests for the ease of testing
 
 Send POST requests to: 
 ```
