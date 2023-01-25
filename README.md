@@ -17,6 +17,13 @@ performance.
   
 
 ## Functionality
+
+### Project has been implemented in 2 versions:
+- V1: with Docker compose + SQS + Data Lake partition by `app_name`
+- V2: with local run `python3 main_v2.py` and RequestHolder class as quick & dirty implementation of messages holder, without partitioning in data lake 
+  
+
+
 Send POST requests to: 
 ```
 http://localhost:5000/track
@@ -34,9 +41,7 @@ Project is created with:
 
 
 ## Style conventions
-For code conventions used Black library. 
-All functions and model methods have explicit doc strings explanations.
-
+For code conventions used Black library.
 
 ## Setup
 To run this project locally, make the following:
@@ -62,7 +67,7 @@ docker compose up
 ```
 
 
-Example of body of JSON request:
+Example of JSON body request:
 ```
 {
     "user_id": "434",
